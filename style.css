@@ -1,0 +1,586 @@
+body {
+    font-family: "YekanBakh";
+}
+button {    
+    font-family: "YekanBakh";
+}
+header {
+    font-family: "YekanBakh";
+}
+
+.search-box {
+    font-family: "YekanBakh";
+}
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container{
+    width: 81%;
+    margin: 2rem auto;
+}
+
+.header__logo{
+    
+}
+
+.header__logo-img{
+    /* width: 3rem; */
+    height: 3.5rem;
+    margin-right: 1rem;
+}
+
+.header__searchbox{
+    position: relative;
+}
+
+.search-box{
+    width: 25rem;
+    height: 3rem;
+    border: none;
+    background-color: rgb(242, 242, 242);
+    border-radius: 0.5rem;
+    padding-right: 1rem;
+    
+}
+
+.header__searchbox-img{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: none;
+    outline: none;
+    
+}
+
+.btn{
+    border: none;
+    outline: none;
+    position: absolute;
+    left:0.5rem ;
+    top: 0.8rem;
+}
+
+.header__left{
+
+}
+
+.header__user{
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.header__user-shape{
+    width: 1.8rem;
+    height: 1.8rem;
+    background-image: url(./images/unnamed.png);
+    border-radius: 50%;
+    background-size: cover;
+
+}
+
+.header__user-left {
+    display: flex;
+    align-items: center;
+}
+
+.header__user-info{
+    padding: 0 0.5rem;
+}
+
+.header__user-hi{
+
+}
+
+.header__user-name{
+    font-family: "serif";
+    font-weight: bold;
+    
+}
+
+.header__shop{
+    font-size: 1.5rem;
+    color: rgb(0, 93, 206);
+    padding-left: 1.5rem;
+    position: relative;
+}
+.header__shop::before {
+    content: "";
+    width: 1px;
+    background-color: #eaeaea;
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    bottom: -3px;
+    
+}
+
+.nav-bar{
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 0rem;
+}
+
+
+
+nav button:hover {
+    background-color: #eaeaea;
+    border-radius: 0.3rem;
+}
+.nav__right{
+    display: flex;
+    margin-right: 2rem;
+
+}
+
+.nav__item{
+    width: 5.5rem;
+    height: 2rem;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+    
+}
+
+
+.category__btn{
+    position: relative;
+    font-size: 1.2rem;
+    width: max-content;
+    display: flex;
+    align-items: center;
+
+}
+
+.category__btn i {
+    padding-left: 0.5rem;
+    color: rgb(75, 99, 209);
+}
+
+.nav__right ul {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    box-shadow: 0.3rem 0.3rem 1.5rem grey ;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease;
+    transform: translateY(-1rem);
+}
+
+.category__btn:focus + ul {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+}
+
+ul li {
+    padding: 1rem 1rem;
+    border-radius: 2px;
+    
+}
+ .nav__right ul li:hover{
+    background-color: rgb(216, 216, 255);
+ }
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav__left {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.nav__left button {
+    width: 7rem;
+    height: 2rem;
+    background: none;
+    border: none;
+    margin-left: 0.9rem;
+    
+
+}
+
+
+.nav__left button a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.left__btn{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.right__btn{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.left__btn::after {
+    content: "";
+    width: 1px;
+    background-color: #eaeaea;
+    position: absolute;
+    top: -5px;
+    left: 162px;
+    bottom: -3px; 
+
+}
+
+.right__btn::after {
+        content: "";
+        width: 1px;
+        background-color: #eaeaea;
+        position: absolute;
+        top: -5px;
+        left: 162px;
+        bottom: -3px;
+}
+.nav__left button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: max-content;
+    margin-right: 0.3rem;
+    font-size: 1.2rem;
+}
+
+.nav__left button i {
+    padding: 0 0.8rem;
+    font-size: 1.5rem;
+    color: rgb(68, 68, 216);
+}
+
+/*header finished*/ 
+
+.search {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 2rem;
+    height: max-content;
+    
+}
+
+.man-laptop{
+    
+    display: flex;
+    width: 50%;
+    justify-content: left;
+}
+
+.man-laptop img {
+    position: relative;
+    left: 0px;
+}
+
+.search__course{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 3rem;
+}
+
+
+
+.search__course h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.search__course input {
+    width: 21.5rem;
+    height: 3rem;
+    border: 1px rgb(231, 231, 231) solid;
+    background-color: rgb(242, 242, 242);
+    border-radius: 0.5rem;
+    padding: 0rem 1rem;
+    border: ;
+
+}
+
+.search__course .search {
+    display: flex;
+    align-content: flex-end;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.search button {
+    position: absolute;
+    width: max-content;
+    height: 3.1rem;
+    border: none;
+    background-color: rgb(62, 62, 207);
+    color: #ffff;
+    border-radius: .5rem;
+    right: 35.3rem;
+    padding: 0 1.5rem;
+}
+ /*next section*/ 
+.container .grid-center {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2 , 1fr);
+    width: 100%;
+    grid-gap: 2rem;
+    justify-content: start;
+}
+
+/* .box-1{
+    background: url(/svg-files/abstract-star-2-svgrepo-com.svg);
+    background-size: cover;
+
+}
+
+.box-2{
+    background: url(/svg-files/flower-green-svgrepo-com.svg);
+    background-size: cover;
+
+}
+
+.box-3{
+    background: url(/svg-files/flower-green-yellow-svgrepo-com.svg);
+    background-size: cover;
+
+}
+
+.box-4{
+    background: url(/svg-files/flower-leaf-2-svgrepo-com.svg);
+    background-size: cover;
+
+}
+
+.box-5{
+    background: url(/svg-files/flower-orange-3-svgrepo-com.svg);
+    background-size: cover;
+
+}
+
+.box-6{
+    background: url(/svg-files/flower-orange-organic-svgrepo-com.svg);
+    background-size: cover;
+
+}
+
+.box-7{
+    background: url(/svg-files/leaf-organic-2-svgrepo-com.svg);
+    background-size: cover;
+
+}
+
+.box-8{
+    background: url(/svg-files/leaf-organic-flora-svgrepo-com.svg);
+    background-size: cover;
+
+}
+
+.box-9{
+    background: url(/svg-files/organic-flora-2-svgrepo-com.svg);
+    background-size: cover;
+
+}
+
+.box-10{
+    background: url(/svg-files/organic-flora-3-svgrepo-com.svg);
+    background-size: cover;
+
+}
+
+.box-11{
+    background: url(/svg-files/organic-flora-svgrepo-com.svg);
+    background-size: cover;
+
+}
+
+.box-12{
+    background: url(/svg-files/yellow-flower-2-svgrepo-com.svg);
+    background-size: cover; */
+
+
+
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    height: 185px;
+    background: linear-gradient(180deg, rgba(48, 74, 202, 0.05) 38.6%, rgba(48, 74, 202, 0) 100%);
+    border-radius: 5px;
+    transition: 0.3s ease all;
+
+}
+
+.box:hover {
+    background-color: rgb(27, 27, 186);
+    color: aliceblue;
+}
+
+h2 + h2 {
+    padding-top: 1rem;
+}
+
+.grid-header {
+    font-size: 3rem;
+    text-align: center;
+    padding: 3rem 0 2rem 0;
+}
+
+.box-pic{
+    width: 65%;
+    height: 65%;
+}
+
+.pic-1{
+    background-image: url(./png/Untitled-1.png);
+    background-size: cover;
+}
+
+.pic-2{
+    background-image: url(./png/Untitled-2.png);
+    background-size: cover;
+}
+
+.pic-3{
+    background-image: url(./png/Untitled-3.png);
+    background-size: cover;
+    
+}
+
+.pic-4{
+    background-image: url(./png/Untitled-4.png);
+    background-size: cover;
+}
+
+.pic-5{
+    background-image: url(./png/Untitled-5.png);
+    background-size: cover;
+}
+
+.pic-6{
+    background-image: url(./png/Untitled-6.png);
+    background-size: cover;
+}
+
+.pic-7{
+    background-image: url(./png/Untitled-7.png);
+    background-size: cover;
+}
+
+.pic-8{
+    background-image: url(./png/Untitled-8.png);
+    background-size: cover;
+}
+
+.pic-9{
+    background-image: url(./png/Untitled-9.png);
+    background-size: cover;
+}
+
+.pic-10{
+    background-image: url(./png/Untitled-10.png);
+    background-size: cover;
+}
+
+.pic-11{
+    background-image: url(./png/Untitled-11.png);
+    background-size: cover;
+}
+
+.pic-12{
+    background-image: url(./png/Untitled-12.png);
+    background-size: cover;
+}
+
+.programming-section h1 {
+    font-size: 2rem;
+    color: rgb(47, 47, 171);
+    padding: 5rem 1rem 2rem 0;
+
+}
+
+.top-ul {
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 8px;
+    display: flex;
+    
+}
+
+.programming-section ul {
+    display: flex;
+    font-family: "YekanBakh";
+    align-items: center;
+
+}
+
+.list-item1 {
+    border-bottom: 5px rgb(25, 25, 131) solid;
+    border-radius:4px 0 ;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    padding-top: 1rem;
+    
+}
+
+.grid-item {
+    width: 95%;
+    border: 1px solid rgb(239, 239, 239);
+    display: flex;
+    flex-direction:column ;
+    border-radius: 8px;
+    height: 25rem;
+    align-items: center;
+    
+
+}
+
+.grid-box-pic {
+    width: 95%;
+    background-image: url(./images/database-511x312.png);
+    background-position: center;
+    background-size: cover;
+    height: 60%;
+    
+    
+    
+}
+
+.course-information {
+    display: flex;
+    background-color: #f7f7f7;
+    flex-direction: column;
+    width: 100%;
+    height: 40%;
+    
+}
+
+.course-information div {
+    display: flex;
+    justify-content: space-between;
+    mar
+}
+
+.course-information h1 {
+    padding: 1rem 0.5rem ;
+}
